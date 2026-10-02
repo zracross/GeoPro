@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#100b32" />
+<title>Class 9 Geography Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090d2b;--glass:rgba(255,255,255,.105);--line:rgba(255,255,255,.22);--white:#fff;--muted:#d8dcff;--cyan:#66f6ff;--pink:#ff77ce;--violet:#8d78ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--white);font-family:'Outfit','Baloo Da 2',sans-serif;background:radial-gradient(ellipse at 15% 10%,#292a76 0,transparent 35%),radial-gradient(ellipse at 85% 15%,#6c245f 0,transparent 30%),linear-gradient(145deg,#070b27,#151044 48%,#081c3b);overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(85px);opacity:.32;z-index:-1;animation:float 13s ease-in-out infinite alternate}
+body:before{background:#4c4bff;top:15%;left:-130px}body:after{background:#ff48b6;right:-130px;bottom:5%;animation-delay:-5s}
+@keyframes float{to{transform:translate(70px,-45px) scale(1.15)}}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(2px 2px at 20% 30%,#fff 45%,transparent 55%),radial-gradient(1px 1px at 70% 20%,#b8faff 45%,transparent 55%),radial-gradient(2px 2px at 82% 66%,#fff 45%,transparent 55%),radial-gradient(1px 1px at 35% 78%,#ffc6ed 45%,transparent 55%),radial-gradient(1px 1px at 57% 48%,#fff 45%,transparent 55%);background-size:270px 230px;opacity:.6;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.95;transform:translateY(-7px)}}
+header{width:min(1160px,92%);margin:auto;padding:25px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.05rem;letter-spacing:.2px}.brand-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,#7776ff,#48eaff);box-shadow:0 0 25px #6c79ff55;font-size:24px}.brand small{display:block;color:#c5caff;font-weight:400;font-size:.83rem;margin-top:2px}
+.top-label{color:#d6d9ff;font-size:.9rem;letter-spacing:1px}
+main{width:min(1120px,92%);margin:15px auto 60px}
+.hero{text-align:center;padding:28px 0 26px;animation:rise .8s both}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #ffffff2b;background:#ffffff0d;border-radius:99px;color:#dbe9ff;font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(2.7rem,7vw,5.3rem);line-height:1.02;margin:22px 0 12px;letter-spacing:-2px;background:linear-gradient(90deg,#fff 10%,#b5faff 45%,#ffb8e8 90%);color:transparent;background-clip:text;-webkit-background-clip:text;text-shadow:0 0 40px #7c70ff30}
+.subtitle{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);margin:0}
+.sparkle{display:inline-block;color:#ffe7a6;animation:spin 7s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.switcher{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:26px auto 30px;animation:rise .9s .1s both}
+.tab{border:1px solid #ffffff35;color:#e9eaff;background:#ffffff0d;padding:14px 24px;border-radius:18px;font:600 1rem 'Outfit',sans-serif;cursor:pointer;transition:transform .25s,background .3s,box-shadow .3s,border-color .3s;min-width:190px;backdrop-filter:blur(12px)}
+.tab span{margin-right:9px;font-size:1.1rem}.tab:hover{transform:translateY(-3px);border-color:#8dfaff}.tab.active{background:linear-gradient(110deg,#5267ff,#8c55ff);border-color:#c7c5ff;box-shadow:0 8px 30px #5c59ff66,0 0 0 3px #ffffff0a}
+.project-wrap{display:grid;grid-template-columns:1fr;max-width:900px;margin:auto}
+.project-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:30px;padding:clamp(25px,5vw,48px);background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.045));backdrop-filter:blur(22px);box-shadow:0 22px 70px #0003;min-height:350px;animation:cardIn .5s cubic-bezier(.2,.8,.2,1) both}
+.project-card:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;right:-90px;top:-120px;background:var(--glow);filter:blur(3px);opacity:.2;pointer-events:none}
+.project-card.second{--glow:#5affd0;border-color:#72f7d766;box-shadow:0 20px 65px #2bf0c51a,inset 0 0 35px #5affd00a}
+.project-card.third{--glow:#ff5ecb;border-color:#ff91db77;box-shadow:0 20px 65px #ff52c51a,inset 0 0 35px #ff5ecb0a}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.card-head{display:flex;align-items:center;gap:18px;margin-bottom:26px;position:relative}
+.project-icon{width:66px;height:66px;flex:0 0 66px;border-radius:22px;display:grid;place-items:center;font-size:30px;background:#ffffff12;border:1px solid #ffffff2c;box-shadow:inset 0 0 20px #ffffff0a}
+h2{font-size:clamp(1.65rem,4vw,2.5rem);margin:0;letter-spacing:-.8px}
+.kicker{color:#c9d2ff;font-size:.88rem;margin-top:4px}
+.rule{height:3px;width:66px;border-radius:9px;margin-top:12px;background:linear-gradient(90deg,var(--cyan),transparent)}
+.instruction{position:relative;font-family:'Baloo Da 2','Outfit',sans-serif;font-size:clamp(1.3rem,3.3vw,2rem);line-height:1.65;font-weight:600;margin:24px 0 0;padding:25px 27px;border:1px solid #ffffff28;background:#05092336;border-radius:20px;box-shadow:inset 0 1px #ffffff0b}
+.second .instruction{border-left:4px solid #70f5d1}.third .instruction{border-left:4px solid #ff8ad7}
+.note{color:#d8dcff;font-size:.94rem;margin:18px 4px 0;line-height:1.7}
+.deadline{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:13px 18px;border-radius:15px;background:linear-gradient(90deg,#ff6aab24,#ffb95c24);border:1px solid #ffb0da88;color:#fff0f8;font-weight:700;box-shadow:0 0 28px #ff60c51c;flex-wrap:wrap}
+.deadline b{color:#ffe7a5}
+.decor{position:absolute;right:30px;bottom:20px;font-size:clamp(3rem,8vw,5.5rem);opacity:.16;transform:rotate(-12deg);pointer-events:none}
+footer{text-align:center;color:#bfc6f2;font-size:.85rem;padding:0 20px 32px}footer .heart{color:#ff8bcf}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:760px){.project-card{min-height:390px}.instruction{max-width:790px}}
+@media(max-width:540px){header{padding:18px 0}.top-label{display:none}.brand-icon{width:40px;height:40px}.hero{padding-top:22px}h1{letter-spacing:-1px}.tab{min-width:0;flex:1;padding:13px 12px;font-size:.9rem}.project-card{border-radius:24px;padding:24px 19px;min-height:370px}.card-head{gap:13px}.project-icon{width:54px;height:54px;flex-basis:54px;border-radius:17px;font-size:25px}.instruction{padding:19px 17px;font-size:1.3rem;line-height:1.7}.decor{right:14px;bottom:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<header>
+  <div class="brand"><div class="brand-icon">📘</div><div>CLASS 9 GEOGRAPHY<small>Project Details</small></div></div>
+  <div class="top-label">EXPLORE · LEARN · CREATE</div>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="sparkle">✦</span> Your project corner <span class="sparkle">✦</span></div>
+    <h1>Geography Projects</h1>
+    <p class="subtitle">Two projects. One beautiful journey of discovery.</p>
+  </section>
+  <nav class="switcher" aria-label="Choose a project">
+    <button class="tab active" id="secondTab" type="button" aria-selected="true" aria-controls="projectPanel"><span>📚</span>Second Project</button>
+    <button class="tab" id="thirdTab" type="button" aria-selected="false" aria-controls="projectPanel"><span>🗺️</span>Third Project</button>
+  </nav>
+  <section class="project-wrap" id="projectPanel" aria-live="polite">
+    <article class="project-card second" id="projectCard">
+      <div class="card-head">
+        <div class="project-icon" id="projectIcon">📖</div>
+        <div><h2 id="projectTitle">Second Project</h2><div class="kicker" id="projectKicker">Read · Understand · Complete</div><div class="rule"></div></div>
+      </div>
+      <div class="instruction" id="projectText" lang="bn">ব্যবহারিক ভূগোল ও পরিবেশ বইয়ের অধ্যায় নম্বর ২</div>
+      <p class="note" id="projectNote">Complete the work carefully and keep your project neat.</p>
+      <div class="decor" id="projectDecor">🌍</div>
+    </article>
+  </section>
+</main>
+<footer>Made for curious minds <span class="heart">♥</span> · Class IX Geography</footer>
+<script>
+const projects = {
+ second: {
+  title:'Second Project', kicker:'Read · Understand · Complete', icon:'📖',
+  text:'ব্যবহারিক ভূগোল ও পরিবেশ বইয়ের অধ্যায় নম্বর ২',
+  note:'Complete the work carefully and keep your project neat.',
+  decor:'🌍', cls:'second'
+ },
+ third: {
+  title:'Third Project', kicker:'Draw · Label · Submit', icon:'🗺️',
+  text:'আর্ট পেপারে (১/৪) পশ্চিমবঙ্গের ম্যাপ অংকন করে তার ওপরে যে কোন দশটি নদনদী দেখাতে হবে।',
+  note:'', deadline:'Last date of submission:', date:'13/10/2026',
+  decor:'✏️', cls:'third'
+ }
+};
+const secondTab=document.getElementById('secondTab');
+const thirdTab=document.getElementById('thirdTab');
+const card=document.getElementById('projectCard');
+function showProject(which){
+ const p=projects[which];
+ card.className='project-card '+p.cls;
+ card.style.animation='none'; void card.offsetWidth; card.style.animation='';
+ document.getElementById('projectTitle').textContent=p.title;
+ document.getElementById('projectKicker').textContent=p.kicker;
+ document.getElementById('projectIcon').textContent=p.icon;
+ document.getElementById('projectText').textContent=p.text;
+ document.getElementById('projectNote').textContent=p.note;
+ document.getElementById('projectDecor').textContent=p.decor;
+ let deadline=document.getElementById('deadline');
+ if(p.deadline){
+  if(!deadline){deadline=document.createElement('div');deadline.id='deadline';deadline.className='deadline';document.querySelector('.project-card').appendChild(deadline)}
+  deadline.innerHTML='🗓️ <span>'+p.deadline+' <b>'+p.date+'</b></span>';
+ }else if(deadline){deadline.remove()}
+ secondTab.classList.toggle('active',which==='second');
+ thirdTab.classList.toggle('active',which==='third');
+ secondTab.setAttribute('aria-selected',which==='second');
+ thirdTab.setAttribute('aria-selected',which==='third');
+}
+secondTab.addEventListener('click',()=>showProject('second'));
+thirdTab.addEventListener('click',()=>showProject('third'));
+</script>
+</body>
+</html>
